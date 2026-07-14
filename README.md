@@ -16,15 +16,15 @@
 ## Структура репозитория
 ```
 .
-├── String/ # Реализация string.h + sprintf
+├── String/src # Реализация string.h + sprintf
 │ ├── s21_string.c
 │ ├── s21_string.h
 │ └── test_s21_string.c
-├── Math/ # Реализация math.h
+├── Math/src # Реализация math.h
 │ ├── s21_math.c
 │ ├── s21_math.h
 │ └── s21_math_test.c
-├── Decimal/ # Реализация десятичной арифметики (s21_decimal)
+├── Decimal/src # Реализация десятичной арифметики (s21_decimal)
 │ ├── s21_decimal.c
 │ ├── s21_decimal.h
 │ └── tests.c
@@ -119,9 +119,9 @@
 
 Пример для сборки и запуска тестов:
 ```bash
-cd String && make test
-cd ../Math && make test
-cd ../Decimal && make test
+cd String/src && make test
+cd ../../Math/src && make test
+cd ../../Decimal/src && make test
 ```
 
 Тесты выполнены в стиле check и покрывают все функции библиотек.
